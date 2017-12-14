@@ -59,7 +59,7 @@ public class Crypto {
 
         for(int count = 0; count < input.length(); count++){
             char letter = input.charAt(count);
-            int index = letterindex.indexOf(letter);
+            int index = letterindex.indexOf(letter);            
             int newindex = index + n;
 
             if(newindex >= 0){
@@ -92,7 +92,7 @@ public class Crypto {
         int xlength = jacksonsgrandpa - (top % jacksonsgrandpa);
 
         //Now we are evaluating and making the groups. If the sum of rudys and jacksonsgrandpa
-        //are less than the top, then they are added on. However, id rudys and jacksonsgrandpa
+        //are less than the top, then they are added on. However, if rudys and jacksonsgrandpa
         //are bigger than the top, the string from rudys to top is added. Then xs are added to
         //fill in that group.
         for(int rudys = 0; rudys < top; rudys += jacksonsgrandpa){
